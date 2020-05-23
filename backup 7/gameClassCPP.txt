@@ -1,0 +1,187 @@
+#include<iostream>
+#include<string>
+#include<vector>
+#include<filesystem>
+
+#include"gamesClass.h";
+#include"teamClass.h"
+
+using namespace std;
+namespace fs = std::filesystem;
+
+void Games::setGamesNumber(const int val) { mg_gamesNumber = val; }
+void Games::setGamesHomeTeam(const vector<PlayerStats> vp) { mg_homeTeam = vp; }
+void Games::setGamesAwayTeam(const vector<PlayerStats> vp) { mg_awayTeam = vp; }
+
+int Games::getGamesNumber() const { return mg_gamesNumber; }
+vector<PlayerStats> Games::getGamesHomeTeam() const { return mg_homeTeam; }
+vector<PlayerStats> Games::getGamesAwayTeam() const { return mg_awayTeam; }
+
+void Games::simulateGame(string chosenGame, Team ht, Team at) {
+	int numb = 0;
+	vector<Player> htp = ht.getTeamPlayers();
+	vector<Player> atp = at.getTeamPlayers();
+
+	for (auto it = htp.begin(); it != htp.end(); it++) {
+		int pts = 0;
+		int ass = 0;
+		int reb = 0;
+		int stl = 0;
+		int blk = 0;
+		int fol = 0;
+		int tov = 0;
+		int fta = 0;
+		int ftm = 0;
+		int fga = 0;
+		int fgm = 0;
+		int tpta = 0;
+		int tptm = 0;
+
+		// zadavame minutite na igracha koito shte igrae i simulirame da vidim shansovete koito ima da napravi neshto
+		// shte go napravq za pyrvite 5 igracha
+		for (int i = 0; i < 48; i++) {
+			auto it = htp.begin();
+			Player p = (*it);
+
+			numb = rand() % 101;
+			if (50 <= numb) {
+				numb = rand() % 101;
+				if (p.getPlayerInsideScoringRating() <= numb) {
+					pts = pts + 2;
+					fga++;
+					fgm++;
+				}
+				else {
+					fga++;
+				}
+				numb = rand() % 101;
+				if (p.getPlayerOutsideScoringRating() <= numb) {
+					pts = pts + 3;
+					tpta++;
+					tptm++;
+				}
+				else {
+					tpta++;
+				}
+				numb = rand() % 101;
+				if (p.getPlayerFreeThrowRating() <= numb) {
+					pts = pts + 1;
+					fta++;
+					ftm++;
+				}
+				else {
+					fta++;
+				}
+				numb = rand() % 101;
+				if (p.getPlayerPassingRating() <= numb) {
+					ass++;
+				}
+				else {
+					numb = rand() % 101;
+					if (50 < numb) {
+						tov++;
+					}
+				}
+			}
+			else {
+				numb = rand() % 101;
+				if (p.getPlayerReboundingRating() <= numb) {
+					reb++;
+				}
+				numb = rand() % 101;
+				if (p.getPlayerStealingRating() <= numb) {
+					stl++;
+				}
+				numb = rand() % 101;
+				if (p.getPlayerBlockingRating() <= numb) {
+					blk++;
+				}
+			}
+		}
+
+		PlayerStats hps(1, 0, pts, ass, reb, stl, blk, 48, 0, tov, fta, ftm, fga, fgm, tpta, tptm, 0);
+	}
+
+	for (auto it = atp.begin(); it != atp.end(); it++) {
+		int pts = 0;
+		int ass = 0;
+		int reb = 0;
+		int stl = 0;
+		int blk = 0;
+		int fol = 0;
+		int tov = 0;
+		int fta = 0;
+		int ftm = 0;
+		int fga = 0;
+		int fgm = 0;
+		int tpta = 0;
+		int tptm = 0;
+
+		// zadavame minutite na igracha koito shte igrae i simulirame da vidim shansovete koito ima da napravi neshto
+		// shte go napravq za pyrvite 5 igracha
+		for (int i = 0; i < 48; i++) {
+			auto it = htp.begin();
+			Player p = (*it);
+
+			numb = rand() % 101;
+			if (50 <= numb) {
+				numb = rand() % 101;
+				if (p.getPlayerInsideScoringRating() <= numb) {
+					pts = pts + 2;
+					fga++;
+					fgm++;
+				}
+				else {
+					fga++;
+				}
+				numb = rand() % 101;
+				if (p.getPlayerOutsideScoringRating() <= numb) {
+					pts = pts + 3;
+					tpta++;
+					tptm++;
+				}
+				else {
+					tpta++;
+				}
+				numb = rand() % 101;
+				if (p.getPlayerFreeThrowRating() <= numb) {
+					pts = pts + 1;
+					fta++;
+					ftm++;
+				}
+				else {
+					fta++;
+				}
+				numb = rand() % 101;
+				if (p.getPlayerPassingRating() <= numb) {
+					ass++;
+				}
+				else {
+					numb = rand() % 101;
+					if (50 < numb) {
+						tov++;
+					}
+				}
+			}
+			else {
+				numb = rand() % 101;
+				if (p.getPlayerReboundingRating() <= numb) {
+					reb++;
+				}
+				numb = rand() % 101;
+				if (p.getPlayerStealingRating() <= numb) {
+					stl++;
+				}
+				numb = rand() % 101;
+				if (p.getPlayerBlockingRating() <= numb) {
+					blk++;
+				}
+			}
+		}
+	}
+}
+
+void Games::saveGameData(string chosenGame) {
+	string gamePath = "Games/" + chosenGame;
+	fs::path pth{ ("Games/" + chosenGame + "/Games") };
+}
