@@ -1,0 +1,17 @@
+Zach LaVine 25 81 82 83 82 48 59 51 57 SG/SF 3x19.00 6
+Wendell CarterJr. 21 77 54 74 56 82 41 67 63 C 4x6.92 2
+Lauri Markkanen 22 71 78 83 55 61 41 55 58 PF/C 3x6.73 3
+Otto PorterJr. 26 65 80 75 70 48 43 47 68 SF/PF 2x28.48 7
+Tomas Satoransky 28 60 77 87 86 47 66 35 61 PG/SG 3x10.00 8
+Thaddeus Young 31 71 81 60 36 60 73 51 72 PF 3x13.54 13
+Coby White 20 65 80 78 77 48 43 32 62 PG/SG 5x5.83 1
+Chandler Hutchinson 24 67 75 66 65 59 76 51 55 SF/PF 4x4.01 2
+Daniel Gafford 21 79 29 50 37 76 37 91 61 C 4x1.78 1
+Denzel Valentine 26 59 80 84 75 49 80 52 55 SF/SG 2x4.69 4
+Kris Dunn 26 60 65 72 75 48 95 52 60 PG 2x7.09 4
+Luke Kornet 24 68 70 83 50 67 36 82 53 C/PF 2x2.25 2
+Cristiano Felicio 27 73 25 69 33 78 38 35 53 C 2x7.52 5
+Shaquille Harrison 26 67 70 67 79 62 78 72 57 SG/SF 1x1.62 2
+Ryan Arcidiacono 26 52 84 75 84 44 41 35 50 PG 3x3.00 3
+Adam Mokoka 21 63 70 64 60 48 59 42 55 SG/SF 1x0.07 1
+Max Strus 24 53 77 84 62 37 40 44 51 SF/SG 1x0.07 1

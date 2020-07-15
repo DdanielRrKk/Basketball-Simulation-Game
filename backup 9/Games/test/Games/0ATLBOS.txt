@@ -1,0 +1,35 @@
+ATL 79
+Trae Young 35 12 4 5 2 3 0 4 7 0 0 4 5
+John Collins 35 14 2 8 1 2 0 5 5 1 1 1 2
+Clint Capela 35 4 2 16 0 0 1 1 2 0 4 2 3
+Jeff Teague 35 11 4 0 1 0 2 2 4 2 3 1 2
+De'Andre Hunter 35 15 3 6 1 0 0 3 3 2 2 3 3
+Kevin Huerter 13 6 2 2 0 0 0 1 3 1 1 1 1
+Bruno Fernando 13 2 1 6 1 0 1 1 1 0 0 0 0
+DeAndre' Bembry 13 10 1 4 0 0 0 2 3 2 2 0 1
+Damian Jones 13 3 1 2 0 1 0 1 2 0 0 1 3
+Skal Labissiere 13 2 0 3 1 0 0 0 3 0 0 2 3
+Cameron Reddish 0 0 0 0 0 0 0 0 0 0 0 0 0
+Dewayne Dedmon 0 0 0 0 0 0 0 0 0 0 0 0 0
+Vince Carter 0 0 0 0 0 0 0 0 0 0 0 0 0
+Treveon Graham 0 0 0 0 0 0 0 0 0 0 0 0 0
+Brandon Goodwin 0 0 0 0 0 0 0 0 0 0 0 0 0
+Charles BrownJr. 0 0 0 0 0 0 0 0 0 0 0 0 0
+BOS 113
+Kemba Walker 35 18 3 7 0 0 0 5 8 1 1 5 5
+Jyson Tatum 35 22 3 8 1 0 1 8 8 1 2 3 3
+Gordon Hayward 35 20 4 4 0 1 0 6 6 1 1 5 5
+Jaylen Brown 35 16 5 5 1 2 0 3 4 2 2 4 6
+Enes Kanter 35 19 1 7 2 0 2 6 6 1 2 4 4
+Markus Smart 13 0 2 2 0 0 0 0 0 0 0 0 2
+Daniel Theis 13 4 1 1 0 1 1 1 1 0 0 2 2
+Robert WilliamsIII 13 8 0 4 2 1 0 4 4 0 1 0 0
+Vincent Poirier 13 0 0 2 0 0 2 0 1 0 0 0 0
+Brad Wanamaker 13 6 1 1 1 0 0 2 2 0 1 2 2
+Semi Ojeleye 0 0 0 0 0 0 0 0 0 0 0 0 0
+Grant Williams 0 0 0 0 0 0 0 0 0 0 0 0 0
+Romeo Langford 0 0 0 0 0 0 0 0 0 0 0 0 0
+Tremond Waters 0 0 0 0 0 0 0 0 0 0 0 0 0
+Javonte Green 0 0 0 0 0 0 0 0 0 0 0 0 0
+Carsen Edwards 0 0 0 0 0 0 0 0 0 0 0 0 0
+Tacko Fall 0 0 0 0 0 0 0 0 0 0 0 0 0
