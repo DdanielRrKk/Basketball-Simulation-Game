@@ -1,0 +1,103 @@
+#pragma once
+#include<iostream>
+#include<string>
+
+using namespace std;
+
+// Class for the stats of an basketball player
+class PlayerStats {
+private:
+	int ps_gamesPlayed;
+	int ps_gamesStarted;
+
+	int ps_totalPoints;
+	int ps_totalAssists;
+	int ps_totalRebunds;
+	int ps_totalSteals;
+	int ps_totalBlocks;
+	int ps_totalMinutes;
+	int ps_totalFouls;
+	int ps_totalTurnovers;
+
+	int ps_totalAtemptedFT;
+	int ps_totalMadeFT;
+	int ps_totalAtemptedFG;
+	int ps_totalMadeFG;
+	int ps_totalAtempted3PT;
+	int ps_totalMade3PT;
+
+	double ps_PER;
+
+public:
+	void calcPER();
+	void progresOneGamesPlayed(const int val);
+
+	// setters
+	void setStatGamesPlayed(const int val);
+	void setStatGamesStarted(const int val);
+
+	void setStatTotalPoints(const int val);
+	void setStatTotalAssists(const int val);
+	void setStatTotalRebounds(const int val);
+	void setStatTotalSteals(const int val);
+	void setStatTotalBlocks(const int val);
+	void setStatTotalMinutes(const int val);
+	void setStatTotalFouls(const int val);
+	void setStatTotalTurnovers(const int val);
+
+	void setStatTotalAtemptedFT(const int val);
+	void setStatTotalMadeFT(const int val);
+	void setStatTotalAtemptedFG(const int val);
+	void setStatTotalMadeFG(const int val);
+	void setStatTotalAtempted3PT(const int val);
+	void setStatTotalMade3PT(const int val);
+
+	// getters
+	int getStatGamesPlayed() const;
+	int getStatGamesStated() const;
+
+	int getStatTotalPoints() const;
+	int getStatTotalAssists() const;
+	int getStatTotalRebounds() const;
+	int getStatTotalSteals() const;
+	int getStatTotalBlocks() const;
+	int getStatTotalMinutes() const;
+	int getStatTotalFouls() const;
+	int getStatTotalTurnovers() const;
+
+	int getStatTotalAtemptedFT() const;
+	int getStatTotalMadeFT() const;
+	int getStatTotalAtemptedFG() const;
+	int getStatTotalMadeFG() const;
+	int getStatTotalAtempted3PT() const;
+	int getStatTotalMade3PT() const;
+
+	double getStatPER() const;
+
+	// get calculating averages
+	double getStatCalcPoints() const;
+	double getStatCalcAssists() const;
+	double getStatCalcRebounds() const;
+	double getStatCalcSteals() const;
+	double getStatCalcBlocks() const;
+	double getStatCalcMinutes() const;
+	double getStatCalcFouls() const;
+	double getStatCalcTurnovers() const;
+
+	//get calculated persentages
+	double getStatCalcFT() const;
+	double getStatCalcFG() const;
+	double getStatCalc3PT() const;
+
+	PlayerStats();
+
+	PlayerStats(int gp, int gs, int tp, int ta, int tr, int ts, int tb, int tm, int tf, int tt, int taft, int tmft, int tafg, int tmfg, int tapt, int tmpt, double per);
+	PlayerStats(int tp, int ta, int tr, int ts, int tb, int tm, int tt, int taft, int tmft, int tafg, int tmfg, int tapt, int tmpt);
+
+	PlayerStats(PlayerStats& ps);
+
+	ostream& output(ostream& out);
+	friend ostream& operator<<(ostream& out, PlayerStats ps);
+
+	void showPlayerStats();
+};
